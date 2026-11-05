@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mission | AURORA</title>
   <meta name="description" content="The goals, timeline and trip-length planner for AURORA-1, a fictional crewed mission to Mars.">
-  <meta name="theme-color" content="#12100e">
+  <meta name="theme-color" content="#bdb5a8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/aurora.css">
   <script defer src="js/site.js"></script>
@@ -23,6 +23,7 @@
           <li><a href="spacecraft.html">Spacecraft</a></li>
           <li><a href="crew.html">Crew</a></li>
           <li><a href="research.html">Research</a></li>
+          <li><a href="community.html">Community</a></li>
           <li><a href="reference.html">Reference</a></li>
         </ul>
       </nav>
@@ -43,22 +44,15 @@
         <div class="cols">
           <div>
             <h3>What AURORA-1 sets out to do</h3>
-            <p><span class="tag assumption">Assumption</span>Land four people on Mars, let them work there, and bring them home safely.</p>
-            <p><span class="tag assumption">Assumption</span>Study Mars&rsquo;s rocks and ice to learn whether the planet was ever habitable.</p>
-            <p><span class="tag assumption">Assumption</span>Test how people, machines and teamwork cope with long distance.</p>
+            <p>Land four people on Mars, let them work there, and bring them home safely.</p>
+            <p>Study Mars&rsquo;s rocks and ice to learn whether the planet was ever habitable.</p>
+            <p>Test how people, machines and teamwork cope with long distance.</p>
           </div>
           <div>
-            <h3>What this concept does not do</h3>
-            <p>It is not an engineering design. It has no budget, no real launch date and no tested hardware. Numbers marked as assumptions were chosen to make the story clear, not because a real program uses them.</p>
+            <h3>What this project does not cover</h3>
+            <p>This is not an engineering design. There is no budget, launch date or tested hardware. The route and schedule are examples, not plans for a real mission.</p>
           </div>
         </div>
-        <div class="legend" role="group" aria-label="How to read the labels on this site">
-        <p><strong>How to read this site:</strong></p>
-        <p><span class="tag fact">Fact</span> checked against a published source</p>
-        <p><span class="tag concept">Concept</span> an illustrative design idea</p>
-        <p><span class="tag assumption">Assumption</span> invented for this fictional mission</p>
-        <p><span class="tag open">Open</span> not yet answered by science</p>
-      </div>
       </div>
     </section>
 
@@ -66,40 +60,48 @@
       <div class="wrap">
         <p class="eyebrow">Mission timeline</p>
         <h2 id="tl">From launch pad to home</h2>
-        <p class="muted">Scroll down. The step nearest the middle of your screen lights up.</p>
         <ol class="timeline">
           <li>
             <span class="when">Stage 1 &middot; Before launch</span>
             <h3>Prepare and wait for the window</h3>
-            <p><span class="tag fact">Fact</span>Earth and Mars line up well for a trip only about once every 26 months, so missions must launch in a short window.</p>
+            <p>Earth and Mars line up well for a trip only about once every 26 months, so missions must launch in a short window.</p>
           </li>
           <li>
             <span class="when">Stage 2 &middot; Outbound</span>
             <h3>The long way out</h3>
-            <p><span class="tag assumption">Assumption</span>AURORA-1 can pick a faster or slower route. A NASA planning study described a fast trajectory of about 180 days.</p>
-            <p><span class="tag open">Open</span>How crews stay healthy and motivated for months in microgravity is still being studied.</p>
+            <p>AURORA-1 can pick a faster or slower route. A NASA planning study described a fast trajectory of about 180 days.</p>
+            <p>How crews stay healthy and motivated for months in microgravity is still being studied.</p>
           </li>
           <li>
             <span class="when">Stage 3 &middot; Arrival</span>
             <h3>Enter orbit and descend</h3>
-            <p><span class="tag concept">Concept</span>A lander separates and carries the crew down. Mars&rsquo;s thin atmosphere gives only some braking, which makes heavy landings hard.</p>
+            <p>A lander separates and carries the crew down. Mars&rsquo;s thin atmosphere gives only some braking, which makes heavy landings hard.</p>
           </li>
           <li>
             <span class="when">Stage 4 &middot; Surface</span>
             <h3>Work on Mars</h3>
-            <p><span class="tag assumption">Assumption</span>Crew collect samples, test equipment and check for water ice. Messages to and from Earth take many minutes, so the crew must decide many things themselves.</p>
+            <p>Crew collect samples, test equipment and check for water ice. Messages to and from Earth take many minutes, so the crew must decide many things themselves.</p>
           </li>
           <li>
             <span class="when">Stage 5 &middot; Return</span>
             <h3>Wait, launch, and fly home</h3>
-            <p><span class="tag fact">Fact</span>The trip home also depends on where Earth and Mars are in their orbits, so crews may need to stay for a long time.</p>
+            <p>The trip home also depends on where Earth and Mars are in their orbits, so crews may need to stay for a long time.</p>
           </li>
           <li>
             <span class="when">Stage 6 &middot; After landing</span>
             <h3>Recovery and review</h3>
-            <p><span class="tag concept">Concept</span>Doctors check the crew, and engineers study what worked, so the next mission can be safer.</p>
+            <p>Doctors check the crew, and engineers study what worked, so the next mission can be safer.</p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <section aria-label="NASA Mars archive image">
+      <div class="wrap">
+        <figure class="nasa-figure">
+          <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/3/3644_PIA14832-full2.jpg" alt="Artist's concept of NASA's Curiosity spacecraft approaching Mars" loading="lazy" decoding="async">
+          <figcaption>NASA/JPL-Caltech, PIA 14832 — Artist&rsquo;s concept of Curiosity approaching Mars. This depicts a robotic mission, not AURORA. <a href="https://science.nasa.gov/resource/curiosity-approaching-mars-artists-concept/">NASA image record</a>.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -111,9 +113,25 @@
         <form class="planner" id="planner" onsubmit="return false" aria-describedby="planner-note">
           <fieldset>
             <legend>Route (each way)</legend>
-            <label class="choice"><input type="radio" name="speed" value="180" checked> <span><strong>Faster route: about 180 days.</strong> <span class="tag fact">Fact</span>Matches the fast trajectory in a NASA planning study. Needs more fuel.</span></label>
-            <label class="choice"><input type="radio" name="speed" value="260"> <span><strong>Slower route: about 260 days.</strong> <span class="tag assumption">Assumption</span>A round number we chose to show the trade-off. Uses less fuel.</span></label>
+            <label class="choice"><input type="radio" name="speed" value="180" checked> <span><strong>Faster route: about 180 days.</strong> Matches the fast trajectory in a NASA planning study. Needs more fuel.</span></label>
+            <label class="choice"><input type="radio" name="speed" value="260"> <span><strong>Slower route: about 260 days.</strong> A round number we chose to show the trade-off. Uses less fuel.</span></label>
           </fieldset>
+          <section class="fuel-section" aria-labelledby="fuel-h">
+            <h3 id="fuel-h">Fuel consumption</h3>
+            <p class="muted">Relative fuel use for each route; exact amounts depend on spacecraft design and mission details.</p>
+            <div class="fuel-comparison">
+              <div class="fuel-level fuel-fast" data-fuel-speed="180">
+                <span class="fuel-route">Faster route</span>
+                <strong>More fuel</strong>
+                <span class="fuel-selected" hidden>Selected route</span>
+              </div>
+              <div class="fuel-level fuel-slow" data-fuel-speed="260">
+                <span class="fuel-route">Slower route</span>
+                <strong>Less fuel</strong>
+                <span class="fuel-selected" hidden>Selected route</span>
+              </div>
+            </div>
+          </section>
           <fieldset>
             <legend><label for="stay">Time on Mars: <output id="stay-out" for="stay">30 days</output></label></legend>
             <input type="range" id="stay" min="30" max="600" step="10" value="30">
@@ -135,13 +153,14 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <p><strong>AURORA is a fictional educational concept.</strong> It is not an active spaceflight program and is not connected to or endorsed by NASA, ESA or any space agency. Crew members are fictional characters.</p>
+      <p>AURORA is a fictional project about Mars exploration, not a real mission or spacecraft program.</p>
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="mission.html">Mission</a></li>
         <li><a href="spacecraft.html">Spacecraft</a></li>
         <li><a href="crew.html">Crew</a></li>
         <li><a href="research.html">Research</a></li>
+        <li><a href="community.html">Community</a></li>
         <li><a href="reference.html">Reference</a></li>
       </ul>
     </div>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spacecraft | AURORA</title>
   <meta name="description" content="An interactive concept diagram of the AURORA spacecraft and its six main systems.">
-  <meta name="theme-color" content="#12100e">
+  <meta name="theme-color" content="#bdb5a8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/aurora.css">
   <script defer src="js/site.js"></script>
@@ -23,6 +23,7 @@
           <li><a href="spacecraft.html" aria-current="page">Spacecraft</a></li>
           <li><a href="crew.html">Crew</a></li>
           <li><a href="research.html">Research</a></li>
+          <li><a href="community.html">Community</a></li>
           <li><a href="reference.html">Reference</a></li>
         </ul>
       </nav>
@@ -32,20 +33,30 @@
     <div class="page-head">
       <div class="wrap">
         <p class="eyebrow">Technology</p>
-        <h1>The AURORA spacecraft</h1>
-        <p class="lede">Six systems have to work together for four people to survive. Select a number on the diagram, or a name in the list, to learn about each one.</p>
+        <h1>Connected Systems,<br>Distinct Roles.</h1>
+        <p class="lede">A Mars mission crew depends on launch, entry and exit, life support, communication, navigation, and return capabilities. This page represents the roles those systems support in the AURORA concept.</p>
+        <p>The descriptions are fictional. They do not represent actual spacecraft designs.</p>
       </div>
     </div>
 
+    <section class="band" aria-label="NASA Mars archive image">
+      <div class="wrap">
+        <figure class="nasa-figure">
+          <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/3/3644_PIA14832-full2.jpg" alt="Artist's concept of NASA's Curiosity spacecraft approaching Mars" loading="lazy" decoding="async">
+          <figcaption>NASA/JPL-Caltech, PIA 14832 — Artist&rsquo;s concept of Curiosity approaching Mars. This depicts a robotic mission, not the AURORA spacecraft shown below. <a href="https://science.nasa.gov/resource/curiosity-approaching-mars-artists-concept/">NASA image record</a>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section aria-labelledby="ex-h">
       <div class="wrap">
-        <h2 id="ex-h" class="muted" style="font-size:1rem;font-family:var(--mono);letter-spacing:.16em;text-transform:uppercase">Interactive diagram</h2>
+        <h2 id="ex-h">Spacecraft systems</h2>
         <div class="explorer" id="explorer">
           <div class="craft-stage">
             <svg viewBox="0 0 640 310" role="group" aria-labelledby="craft-t craft-d">
-          <title id="craft-t">Concept diagram of the AURORA spacecraft</title>
+          <title id="craft-t">AURORA spacecraft diagram</title>
           <desc id="craft-d">A side view of a long spacecraft with six numbered parts: lander at the front, crew habitat, radiation shelter, supply module, propulsion stage, and solar arrays above and below. The same information is in the list next to this diagram.</desc>
-          <g stroke="#c4baa7" stroke-width="2" fill="#272019">
+          <g class="spacecraft-body" stroke="#c4baa7" stroke-width="2" fill="#272019">
             <polygon points="30,150 150,108 150,192"/>
             <rect x="150" y="108" width="185" height="84" rx="6"/>
             <rect x="335" y="116" width="100" height="68"/>
@@ -53,12 +64,11 @@
             <polygon points="555,112 600,90 600,130 555,140"/>
             <polygon points="555,188 600,210 600,170 555,160"/>
           </g>
-          <rect x="262" y="128" width="60" height="44" fill="none" stroke="#74bfb0" stroke-width="2" stroke-dasharray="5 4"/>
-          <g stroke="#e3b95c" stroke-width="2" fill="#1c1815">
+          <g class="solar-arrays" stroke="#e3b95c" stroke-width="2" fill="#1c1815">
             <line x1="325" y1="108" x2="325" y2="78"/><rect x="235" y="22" width="180" height="56"/>
             <line x1="325" y1="192" x2="325" y2="232"/><rect x="235" y="232" width="180" height="56"/>
           </g>
-          <g stroke="#4a4036" stroke-width="1">
+          <g class="solar-grid" stroke="#4a4036" stroke-width="1">
             <line x1="265" y1="22" x2="265" y2="78"/><line x1="295" y1="22" x2="295" y2="78"/><line x1="325" y1="22" x2="325" y2="78"/><line x1="355" y1="22" x2="355" y2="78"/><line x1="385" y1="22" x2="385" y2="78"/>
             <line x1="265" y1="232" x2="265" y2="288"/><line x1="295" y1="232" x2="295" y2="288"/><line x1="325" y1="232" x2="325" y2="288"/><line x1="355" y1="232" x2="355" y2="288"/><line x1="385" y1="232" x2="385" y2="288"/>
           </g>
@@ -69,7 +79,7 @@
           <g class="hotspot" data-module="propulsion" role="button" tabindex="0" aria-label="5, Propulsion stage"><circle class="ring" cx="495" cy="150" r="28"/><text x="495" y="155" text-anchor="middle">5</text></g>
           <g class="hotspot" data-module="power" role="button" tabindex="0" aria-label="6, Solar arrays"><circle class="ring" cx="325" cy="50" r="28"/><text x="325" y="55" text-anchor="middle">6</text></g>
         </svg>
-            <p class="muted" style="margin:.8rem 0 0;font-size:.9rem"><span class="tag concept">Concept</span>Not to scale. This drawing was made for the project to explain ideas. It is not a real engineering design.</p>
+            <p class="muted" style="margin:.8rem 0 0;font-size:.9rem">A rough sketch, not to scale or an engineering design.</p>
           </div>
           <div>
             <ul class="module-list" aria-label="Spacecraft systems">
@@ -80,53 +90,40 @@
             <li><button type="button" data-module="propulsion" aria-pressed="false"><span>5</span>Propulsion stage</button></li>
             <li><button type="button" data-module="power" aria-pressed="false"><span>6</span>Solar arrays</button></li>
             </ul>
-            <div class="module-detail" aria-live="polite">
-            <div class="module-item" data-module="lander">
+            <div class="module-detail">
+            <article class="module-item" data-module="lander">
               <h3>1. Descent lander</h3>
-              <p><span class="tag concept">Concept</span>Carries the crew from orbit down to the surface.</p>
-              <p><span class="tag fact">Fact</span>Mars&rsquo;s atmosphere is thin, so it slows a spacecraft less than Earth&rsquo;s does, yet it still heats the vehicle during entry. Landing something large and heavy is one of the hardest unsolved parts of a crewed mission.</p>
-            </div>
-            <div class="module-item" data-module="habitat">
+              <p>Carries the crew from orbit down to the surface.</p>
+              <p>Mars&rsquo;s atmosphere is thin, so it slows a spacecraft less than Earth&rsquo;s does, yet it still heats the vehicle during entry. Landing something large and heavy is one of the hardest unsolved parts of a crewed mission.</p>
+            </article>
+            <article class="module-item" data-module="habitat">
               <h3>2. Crew habitat</h3>
-              <p><span class="tag concept">Concept</span>Where four people live, eat, exercise and work on the way to Mars.</p>
-              <p><span class="tag fact">Fact</span>Long stays in weightlessness weaken muscles and bones, so daily exercise is a core part of the plan. This concept leaves out exact room sizes on purpose.</p>
-            </div>
-            <div class="module-item" data-module="shelter">
+              <p>Where four people live, eat, exercise and work on the way to Mars.</p>
+              <p>Long stays in weightlessness weaken muscles and bones, so daily exercise is a core part of the plan. This concept leaves out exact room sizes on purpose.</p>
+            </article>
+            <article class="module-item" data-module="shelter">
               <h3>3. Radiation shelter</h3>
-              <p><span class="tag concept">Concept</span>A small, shielded space where the crew can wait out solar storms.</p>
-              <p><span class="tag open">Open</span>Radiation outside Earth&rsquo;s protective magnetic field is a major health concern for long trips. How much shielding is enough is still being researched.</p>
-            </div>
-            <div class="module-item" data-module="supply">
+              <p>A small, shielded space where the crew can wait out solar storms.</p>
+              <p>Radiation outside Earth&rsquo;s protective magnetic field is a major health concern for long trips. How much shielding is enough is still being researched.</p>
+            </article>
+            <article class="module-item" data-module="supply">
               <h3>4. Supply module</h3>
-              <p><span class="tag concept">Concept</span>Stores food, spare parts and recycling equipment for the whole trip.</p>
-              <p><span class="tag concept">Concept</span>Everything launched from Earth is costly, so crews would recycle as much air and water as possible and carry spares for repairs they cannot order.</p>
-            </div>
-            <div class="module-item" data-module="propulsion">
+              <p>Stores food, spare parts and recycling equipment for the whole trip.</p>
+              <p>Everything launched from Earth is costly, so crews would recycle as much air and water as possible and carry spares for repairs they cannot order.</p>
+            </article>
+            <article class="module-item" data-module="propulsion">
               <h3>5. Propulsion stage</h3>
-              <p><span class="tag assumption">Assumption</span>Pushes the spacecraft out of Earth orbit toward Mars.</p>
-              <p><span class="tag open">Open</span>Space agencies have studied several engine types. AURORA does not choose one, because that decision needs real engineering analysis.</p>
-            </div>
-            <div class="module-item" data-module="power">
+              <p>Pushes the spacecraft out of Earth orbit toward Mars.</p>
+              <p>Space agencies have studied several engine types. AURORA does not choose one, because that decision needs real engineering analysis.</p>
+            </article>
+            <article class="module-item" data-module="power">
               <h3>6. Solar arrays</h3>
-              <p><span class="tag concept">Concept</span>Collect sunlight to make electricity for equipment, lights and life support.</p>
-              <p><span class="tag fact">Fact</span>Mars is farther from the Sun than Earth is, so sunlight there is weaker. A real design would have to account for that, and for dust storms on the surface.</p>
-            </div>
+              <p>Collect sunlight to make electricity for equipment, lights and life support.</p>
+              <p>Mars is farther from the Sun than Earth is, so sunlight there is weaker. A real design would have to account for that, and for dust storms on the surface.</p>
+            </article>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="band" aria-labelledby="why-h">
-      <div class="wrap">
-        <p class="eyebrow">Design thinking</p>
-        <h2 id="why-h">Why the spacecraft looks this way</h2>
-        <div class="cols">
-          <p>Each part is a separate module on purpose. If one system fails, the crew can often work around it, and modules can be tested one by one on Earth.</p>
-          <p>The shelter sits in the middle of the habitat so the rest of the spacecraft, such as supplies and fuel, adds shielding on the sides.</p>
-          <p>The solar arrays fold flat against the ship during launch, then open once the spacecraft is in space.</p>
-        </div>
-        <p class="muted"><span class="tag concept">Concept</span>The last two ideas are design reasoning for the concept. They are not confirmed engineering results.</p>
       </div>
     </section>
     <div class="wrap next"><a class="btn ghost" href="mission.html">&larr; Mission</a><a class="btn" href="crew.html">Crew &rarr;</a></div>
@@ -134,13 +131,14 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <p><strong>AURORA is a fictional educational concept.</strong> It is not an active spaceflight program and is not connected to or endorsed by NASA, ESA or any space agency. Crew members are fictional characters.</p>
+      <p>AURORA is a fictional project about Mars exploration, not a real mission or spacecraft program.</p>
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="mission.html">Mission</a></li>
         <li><a href="spacecraft.html">Spacecraft</a></li>
         <li><a href="crew.html">Crew</a></li>
         <li><a href="research.html">Research</a></li>
+        <li><a href="community.html">Community</a></li>
         <li><a href="reference.html">Reference</a></li>
       </ul>
     </div>
