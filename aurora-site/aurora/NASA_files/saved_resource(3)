@@ -1,0 +1,248 @@
+(()=>{var e,_,r,i,a={428(e){"use strict";e.exports=wp.i18n}},t={};function __webpack_require__(e){var _=t[e];if(void 0!==_)return _.exports;var r=t[e]={exports:{}};return a[e](r,r.exports,__webpack_require__),r.exports}__webpack_require__.m=a,__webpack_require__.n=e=>{var _=e&&e.__esModule?()=>e.default:()=>e;return __webpack_require__.d(_,{a:_}),_},__webpack_require__.d=(e,_)=>{for(var r in _)__webpack_require__.o(_,r)&&!__webpack_require__.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:_[r]})},__webpack_require__.f={},__webpack_require__.e=e=>Promise.all(Object.keys(__webpack_require__.f).reduce((_,r)=>(__webpack_require__.f[r](e,_),_),[])),__webpack_require__.u=e=>"chunks/"+{442:"missing-or-empty-page-title",681:"add-label-to-unllabeled-form-fields"}[e]+"."+{442:"c2d7b59233f1e514abe0",681:"303d6a41521e6bf4950a"}[e]+".js",__webpack_require__.miniCssF=e=>{},__webpack_require__.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),__webpack_require__.o=(e,_)=>Object.prototype.hasOwnProperty.call(e,_),e={},_="accessibility-checker-pro:",__webpack_require__.l=(r,i,a,t)=>{if(e[r])e[r].push(i);else{var c,n;if(void 0!==a)for(var u=document.getElementsByTagName("script"),o=0;o<u.length;o++){var p=u[o];if(p.getAttribute("src")==r||p.getAttribute("data-webpack")==_+a){c=p;break}}c||(n=!0,(c=document.createElement("script")).charset="utf-8",__webpack_require__.nc&&c.setAttribute("nonce",__webpack_require__.nc),c.setAttribute("data-webpack",_+a),c.src=r),e[r]=[i];var l=(_,i)=>{c.onerror=c.onload=null,clearTimeout(b);var a=e[r];if(delete e[r],c.parentNode&&c.parentNode.removeChild(c),a&&a.forEach(e=>e(i)),_)return _(i)},b=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),n&&document.head.appendChild(c)}},(()=>{var e;__webpack_require__.g.importScripts&&(e=__webpack_require__.g.location+"");var _=__webpack_require__.g.document;if(!e&&_&&(_.currentScript&&"SCRIPT"===_.currentScript.tagName.toUpperCase()&&(e=_.currentScript.src),!e)){var r=_.getElementsByTagName("script");if(r.length)for(var i=r.length-1;i>-1&&(!e||!/^http(s?):/.test(e));)e=r[i--].src}if(!e)throw new Error("Automatic publicPath is not supported in this browser");e=e.replace(/^blob:/,"").replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),__webpack_require__.p=e})(),(()=>{var e={108:0};__webpack_require__.f.j=(_,r)=>{var i=__webpack_require__.o(e,_)?e[_]:void 0;if(0!==i)if(i)r.push(i[2]);else{var a=new Promise((r,a)=>i=e[_]=[r,a]);r.push(i[2]=a);var t=__webpack_require__.p+__webpack_require__.u(_),c=new Error;__webpack_require__.l(t,r=>{if(__webpack_require__.o(e,_)&&(0!==(i=e[_])&&(e[_]=void 0),i)){var a=r&&("load"===r.type?"missing":r.type),t=r&&r.target&&r.target.src;c.message="Loading chunk "+_+" failed.\n("+a+": "+t+")",c.name="ChunkLoadError",c.type=a,c.request=t,i[1](c)}},"chunk-"+_,_)}};var _=(_,r)=>{var i,a,[t,c,n]=r,u=0;if(t.some(_=>0!==e[_])){for(i in c)__webpack_require__.o(c,i)&&(__webpack_require__.m[i]=c[i]);if(n)n(__webpack_require__)}for(_&&_(r);u<t.length;u++)a=t[u],__webpack_require__.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self.webpackChunkaccessibility_checker_pro=self.webpackChunkaccessibility_checker_pro||[];r.forEach(_.bind(null,0)),r.push=_.bind(null,r.push.bind(r))})();var c=window.edac_frontend_fixes||{};null!=c&&null!==(r=c.missing_or_empty_page_title)&&void 0!==r&&r.enabled&&__webpack_require__.e(442).then(__webpack_require__.bind(__webpack_require__,89)).then(function(e){e.default()}),null!=c&&null!==(i=c.add_label_to_unlabelled_form_fields)&&void 0!==i&&i.enabled&&__webpack_require__.e(681).then(__webpack_require__.bind(__webpack_require__,469)).then(function(e){e.default()})})();
+//# sourceMappingURL=frontendFixes.bundle.js.map;
+/**
+ * NASA.gov — Homepage Block Same-Background Adjacency Collapse
+ * ============================================================
+ * JIRA:   WWPTL-15, WWPTL-16, WWPTL-17
+ *
+ * Works with homepage-blocks.css.
+ *
+ * PROBLEM
+ * ───────
+ * Every block has 4.5rem top + 4.5rem bottom padding.
+ * When two adjacent blocks share the same background color, the
+ * combined 9rem gap looks doubled. We collapse it to 4.5rem by zeroing
+ * the top padding of the second block via .hp-collapse-top.
+ *
+ * WHY JS
+ * ──────
+ * CSS cannot inspect a sibling's computed background color.
+ * Block order and color mode are both editable in the CMS —
+ * hardcoded sibling selectors break the moment an editor reorders
+ * or recolors a block. JS reads getComputedStyle() at runtime so
+ * it works for any order and any color mode combination.
+ *
+ * HOW IT WORKS
+ * ────────────
+ * 1. Query all homepage blocks in DOM order.
+ * 2. For each block, resolve its effective background color via
+ *    getEffectiveBg(). Most blocks: walk up the DOM until a
+ *    non-transparent color is found. Blocks in BG_INNER_OVERRIDES
+ *    resolve from a specific inner element instead.
+ * 3. Blocks in BG_COLLAPSE_SKIP (e.g. callout — image/gradient bg,
+ *    no solid color) are excluded from the comparison. The block
+ *    after a skipped block always gets full top padding.
+ * 4. Compare to the previous non-skipped block's resolved color.
+ * 5. Blocks in TOP_COLLAPSE_EXEMPT never collapse their own top —
+ *    their top-edge color differs from their resolved bottom color
+ *    (e.g. 3-column: dark top, light bottom strip) — but their
+ *    resolved color still feeds the comparison for the next block.
+ * 6. If they match → add .hp-collapse-top (CSS zeroes padding-top).
+ *    If they differ → remove .hp-collapse-top (full 4.5rem padding-top).
+ * 7. Re-run on window resize in case layout changes affect bg resolution.
+ *
+ * ENQUEUE IN WORDPRESS
+ * ─────────────────────
+ * add_action( 'wp_enqueue_scripts', function() {
+ *     if ( ! is_front_page() ) return;
+ *     wp_enqueue_script(
+ *         'hp-block-spacing',
+ *         get_template_directory_uri() . '/assets/js/home-block-spacing.js',
+ *         [],
+ *         '1.0.0',
+ *         true
+ *     );
+ * } );
+ */
+
+( function () {
+
+    'use strict';
+
+    // CSS class added/removed by this script
+    var COLLAPSE_CLASS = 'hp-collapse-top';
+
+    // All homepage block selectors — order in DOM = order on page
+    var BLOCK_SELECTORS = [
+        '.wp-block-nasa-blocks-nasa-live-three-column',
+        '.wp-block-nasa-blocks-meet-the',
+        '.wp-block-nasa-blocks-news-automated',
+        '.wp-block-nasa-blocks-news-manual',
+        '.wp-block-nasa-blocks-callout',
+        '.wp-block-nasa-blocks-featured-link',
+        '.wp-block-nasa-blocks-card-grid',
+        '.wp-block-nasa-blocks-image-of-the-day',
+        '.wp-block-nasa-blocks-gallery-preview',
+        '.wp-block-nasa-blocks-subscription-banner',
+        '.wp-block-nasa-blocks-featured-video',
+    ];
+
+    /**
+     * Blocks whose outer element has no solid background (image, gradient,
+     * or fully transparent). The upward DOM walk would bleed through to
+     * the body color and produce false matches with adjacent blocks.
+     *
+     * Blocks listed here are excluded from the prevBg comparison — the block
+     * immediately after a skipped block always receives full top padding.
+     *
+     * Add entries here for any block that is purely image- or gradient-backed
+     * with no solid background color.
+     */
+    var BG_COLLAPSE_SKIP = [
+        '.wp-block-nasa-blocks-callout',
+    ];
+
+    /**
+     * Blocks whose outer element background is overridden by an inner wrapper.
+     * The upward DOM walk on the outer element would return the wrong color.
+     *
+     * Key:   block selector (must match one entry in BLOCK_SELECTORS)
+     * Value: inner selector whose background should be used instead
+     *
+	 * Example: nasa-live-three-column has bg-carbon-90 on its outer element.
+     * Its bottom strip (.hds-nasa-live-more) is bg-carbon-05 — that's the
+     * color the next block visually meets, so comparisons use it.
+     * (.hds-nasa-live-main has no background of its own.)
+     */
+    var BG_INNER_OVERRIDES = {
+        '.wp-block-nasa-blocks-nasa-live-three-column': '.hds-nasa-live-more',
+    };
+
+	/**
+     * Blocks whose TOP edge color differs from their resolved color.
+     * The resolved color represents the block's BOTTOM edge (used to
+     * compare against the following block), so these blocks must never
+     * have their own top padding collapsed — the comparison color does
+     * not describe what's visible at their top.
+     *
+     * Example: nasa-live-three-column is dark (bg-carbon-90) at the top
+     * but resolves to light carbon-05 from .hds-nasa-live-more at the
+     * bottom. A light block above it would false-match and collapse a
+     * dark/light seam.
+     */
+    var TOP_COLLAPSE_EXEMPT = [
+        '.wp-block-nasa-blocks-nasa-live-three-column',
+    ];
+
+    /**
+     * Resolve the effective background color of a block.
+     *
+     * If the block has an entry in BG_INNER_OVERRIDES and that inner element
+     * exists in the DOM, resolves the color from there. Otherwise walks UP
+     * the DOM from the block element until a non-transparent background is
+     * found, falling back to the body background color.
+     *
+     * @param  {HTMLElement} el            Block root element
+     * @param  {string}      blockSelector The selector string that matched el
+     * @return {string}                    Resolved rgb()/rgba() color string
+     */
+    function getEffectiveBg( el, blockSelector ) {
+        var transparent = 'rgba(0, 0, 0, 0)';
+
+        // Check for a declared inner override for this block type
+        var innerSelector = BG_INNER_OVERRIDES[ blockSelector ];
+        if ( innerSelector ) {
+            var inner = el.querySelector( innerSelector );
+            if ( inner ) {
+                var innerBg = window.getComputedStyle( inner ).backgroundColor;
+                if ( innerBg && innerBg !== transparent && innerBg !== 'transparent' ) {
+                    return innerBg;
+                }
+            }
+        }
+
+        // Default: walk up from the block element
+        var node = el;
+        while ( node && node !== document.documentElement ) {
+            var bg = window.getComputedStyle( node ).backgroundColor;
+            if ( bg && bg !== transparent && bg !== 'transparent' ) {
+                return bg;
+            }
+            node = node.parentElement;
+        }
+
+        return window.getComputedStyle( document.body ).backgroundColor;
+    }
+
+    /**
+     * Main function — walks blocks in DOM order and collapses top padding
+     * on any block that shares the same background as the one before it.
+     */
+    function collapseAdjacentSameBgBlocks() {
+
+        // Only run on the homepage
+        if ( ! document.body.classList.contains( 'home' ) ) {
+            return;
+        }
+
+        var combined = BLOCK_SELECTORS.join( ',' );
+        var blocks = Array.from( document.querySelectorAll( combined ) ).map( function ( el ) {
+            var matchedSelector = BLOCK_SELECTORS.find( function ( sel ) {
+                return el.matches( sel );
+            } );
+            return { el: el, selector: matchedSelector };
+        } );
+
+        if ( ! blocks.length ) {
+            return;
+        }
+
+        var prevBg = null;
+
+        blocks.forEach( function ( block ) {
+
+            // Blocks in the skip list have no reliable solid background.
+            // Never collapse them, and reset prevBg so the block after them
+            // also always gets full top padding.
+            if ( BG_COLLAPSE_SKIP.indexOf( block.selector ) !== -1 ) {
+                block.el.classList.remove( COLLAPSE_CLASS );
+                prevBg = null;
+                return;
+            }
+
+            var thisBg = getEffectiveBg( block.el, block.selector );
+
+			// Split-background blocks: never collapse their own top,
+            // but their bottom color still feeds the next comparison.
+            if ( TOP_COLLAPSE_EXEMPT.indexOf( block.selector ) !== -1 ) {
+                block.el.classList.remove( COLLAPSE_CLASS );
+                prevBg = thisBg;
+                return;
+            }
+
+            if ( prevBg !== null && thisBg === prevBg ) {
+                // Same background as previous block — collapse top padding
+                block.el.classList.add( COLLAPSE_CLASS );
+            } else {
+                // Different background — ensure full top padding is restored
+                block.el.classList.remove( COLLAPSE_CLASS );
+            }
+
+            prevBg = thisBg;
+        } );
+    }
+
+    // Debounce helper — prevents resize from firing too rapidly
+    function debounce( fn, delay ) {
+        var timer;
+        return function () {
+            clearTimeout( timer );
+            timer = setTimeout( fn, delay );
+        };
+    }
+
+    // Run once on DOM ready
+    if ( document.readyState === 'loading' ) {
+        document.addEventListener( 'DOMContentLoaded', collapseAdjacentSameBgBlocks );
+    } else {
+        collapseAdjacentSameBgBlocks();
+    }
+
+    // Re-run on resize — background resolution can change at breakpoints
+    window.addEventListener( 'resize', debounce( collapseAdjacentSameBgBlocks, 150 ) );
+
+}() );;
+/*! This file is auto-generated */
+"use strict";var wp;(wp||={}).domReady=(()=>{var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var a=Object.getOwnPropertyNames;var i=Object.prototype.hasOwnProperty;var f=(e,t)=>{for(var n in t)o(e,n,{get:t[n],enumerable:!0})},m=(e,t,n,r)=>{if(t&&typeof t=="object"||typeof t=="function")for(let d of a(t))!i.call(e,d)&&d!==n&&o(e,d,{get:()=>t[d],enumerable:!(r=u(t,d))||r.enumerable});return e};var c=e=>m(o({},"__esModule",{value:!0}),e);var p={};f(p,{default:()=>y});function y(e){if(!(typeof document>"u")){if(document.readyState==="complete"||document.readyState==="interactive")return void e();document.addEventListener("DOMContentLoaded",e)}}return c(p);})();
+if (typeof wp.domReady === 'object' && wp.domReady.default) { wp.domReady = wp.domReady.default; }
+;

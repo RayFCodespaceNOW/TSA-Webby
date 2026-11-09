@@ -257,3 +257,699 @@ table.credits th { font: .72rem var(--mono); letter-spacing: .14em; text-transfo
 .activity-list li { counter-increment: activity; padding: 1rem; background: var(--ink-2); border-top: 3px solid var(--rust); }
 .activity-list li::before { content: "IDEA " counter(activity); display: block; margin-bottom: .45rem; color: var(--rust-deep); font-size: .8rem; font-weight: 700; }
 .community-note { border-left: 3px solid var(--teal); padding: .5rem 0 .5rem 1rem; }
+
+/* ---------- Modern NASA-inspired editorial layout ---------- */
+:root {
+  --page-bg: #efefee;
+  --page-surface: #f7f5f3;
+  --ink: #111111;
+  --ink-soft: #4b525b;
+  --rule: rgba(17,17,17,0.12);
+  --panel-dark: #101820;
+  --panel-dark-2: #1b2430;
+  --btn-red: #ef4d3d;
+  --btn-red-dark: #d7362d;
+  --accent: #d5b797;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+}
+
+main {
+  background: var(--page-bg);
+}
+
+.wrap {
+  width: min(100% - 2rem, 1280px);
+}
+
+h1, h2, h3 {
+  font-family: var(--sans);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  color: var(--ink);
+}
+
+p,
+a,
+li,
+dd,
+dt,
+span {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(15, 20, 25, 0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  min-height: 72px;
+}
+
+.header-row {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand,
+.site-nav a,
+.nav-toggle {
+  color: #f4f5f7;
+}
+
+.brand {
+  font-family: var(--sans);
+  letter-spacing: .12em;
+  font-weight: 750;
+  color: #f4f5f7;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.brand span {
+  color: var(--btn-red);
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: .25rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-nav a {
+  display: block;
+  padding: .55rem .8rem;
+  color: rgba(244,245,247,0.82);
+  text-decoration: none;
+  font: 600 .92rem var(--sans);
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  opacity: 1;
+  color: #fff;
+}
+
+.site-nav a[aria-current="page"] {
+  color: #fff;
+  border-bottom-color: var(--btn-red);
+}
+
+@media (max-width: 52rem) {
+  .site-nav {
+    background: #0f1419;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .site-nav a {
+    color: rgba(244,245,247,0.88);
+  }
+}
+
+.hero {
+  background:
+    linear-gradient(90deg, rgba(11, 14, 17, 0.78) 0%, rgba(11, 14, 17, 0.62) 30%, rgba(11, 14, 17, 0.38) 58%, rgba(8, 9, 12, 0.28) 100%),
+    url('https://images-assets.nasa.gov/image/iss060e097929/iss060e097929~orig.jpg') center/cover no-repeat;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-grid {
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero .stamp,
+.hero .eyebrow {
+  color: #f7e6d2;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+.eyebrow {
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 5.6vw, 6.5rem);
+  line-height: 0.92;
+  margin: 0 0 1.35rem;
+  color: #fff;
+  max-width: 520px;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.35);
+}
+
+.hero h1 em {
+  color: #fff;
+  font-style: normal;
+}
+
+.hero .lede {
+  font-size: clamp(1.1rem, 2vw, 1.65rem);
+  line-height: 1.45;
+  max-width: 780px;
+  color: rgba(255,255,255,.95);
+  margin-bottom: 1.6rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.btn {
+  background: var(--btn-red);
+  color: #fff;
+  border-color: var(--btn-red);
+  border-radius: 999px;
+  padding: 0.9rem 1.5rem;
+  font-weight: 800;
+  box-shadow: none;
+  letter-spacing: -0.02em;
+  text-shadow: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--btn-red-dark);
+  border-color: var(--btn-red-dark);
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+.hero-art {
+  display: none;
+}
+
+.page-head {
+  background: #0d1218;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: clamp(2.5rem, 5vw, 4.5rem) 0 2.2rem;
+}
+
+.page-head .eyebrow,
+.page-head h1,
+.page-head .lede {
+  color: #fff;
+}
+
+.page-head .eyebrow {
+  margin-bottom: 0.8rem;
+}
+
+.page-head h1 {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  margin-bottom: 0.65rem;
+  color: #fff;
+}
+
+.page-head .lede {
+  opacity: 0.85;
+  font-size: clamp(1.08rem, 2vw, 1.4rem);
+  line-height: 1.5;
+  max-width: 44rem;
+}
+
+.band {
+  background: #0d1218;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 2rem 0 1.5rem;
+  color: #fff;
+}
+
+.band .wrap {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.band h2 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.98;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.band p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.timeline {
+  border-left-color: rgba(255,255,255,0.2);
+}
+
+.timeline li {
+  opacity: 1;
+}
+
+.timeline .when,
+.timeline h3,
+.timeline p {
+  color: #fff;
+}
+
+.timeline .when {
+  color: #f7d0a7;
+}
+
+.timeline li::before {
+  background: var(--btn-red);
+  border-color: var(--btn-red);
+}
+
+section[aria-labelledby="goals"],
+section[aria-labelledby="plan-h"],
+section[aria-label="NASA Mars archive image"],
+section[aria-labelledby="facts-h"],
+section[aria-labelledby="path-h"] {
+  background: var(--page-surface);
+}
+
+section[aria-labelledby="goals"],
+section[aria-labelledby="plan-h"],
+section[aria-label="NASA Mars archive image"] {
+  background: #0d1218;
+  color: #fff;
+}
+
+section[aria-labelledby="goals"] h2,
+section[aria-labelledby="goals"] h3,
+section[aria-labelledby="goals"] p,
+section[aria-labelledby="plan-h"] h2,
+section[aria-labelledby="plan-h"] p,
+section[aria-label="NASA Mars archive image"] figcaption,
+section[aria-label="NASA Mars archive image"] a {
+  color: #fff;
+}
+
+section[aria-labelledby="facts-h"] .wrap,
+section[aria-labelledby="path-h"] .wrap {
+  max-width: 1280px;
+}
+
+section[aria-labelledby="facts-h"] h2,
+section[aria-labelledby="path-h"] h2 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.98;
+  margin-bottom: 0.9rem;
+}
+
+.muted {
+  color: var(--ink-soft);
+  font-size: 1.04rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  border: 1px solid rgba(17,17,17,0.12);
+  background: #111;
+}
+
+.facts > div {
+  padding: 1.2rem 1.15rem 1.3rem;
+  min-height: 170px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: #111;
+}
+
+.facts > div:nth-child(5n) {
+  border-right: 0;
+}
+
+.facts dt {
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.facts dd {
+  margin: 0.5rem 0 0;
+  color: #fff;
+  font-size: clamp(1.7rem, 2.7vw, 2.7rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.facts dd small {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.75);
+}
+
+.nasa-figure {
+  margin-top: 2.5rem;
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  background: transparent;
+  box-shadow: none;
+}
+
+.nasa-figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
+.nasa-figure figcaption {
+  padding: 0.9rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.qlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+
+.qlist > li {
+  display: block;
+  padding: 1.2rem 1rem 1.1rem;
+  background: #f4f0ea;
+  border: 1px solid rgba(17,17,17,0.08);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.qlist > li::before {
+  content: counter(q, decimal-leading-zero);
+  color: var(--btn-red);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.qlist h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.08;
+}
+
+.qlist a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.qlist a:hover,
+.qlist a:focus-visible {
+  color: var(--btn-red-dark);
+}
+
+.qlist p {
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+.site-footer {
+  background: #0f1419;
+  color: rgba(255,255,255,0.76);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.site-footer ul {
+  gap: 1rem;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.82);
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #fff;
+}
+
+@media (max-width: 56rem) {
+  .site-header {
+    min-height: 60px;
+  }
+
+  .header-row {
+    min-height: 60px;
+  }
+
+  .band .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 42rem) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .facts > div {
+    border-right: 0;
+  }
+
+  .site-nav {
+    display: none;
+  }
+}
+
+/* ---------- Compact information-dense layout ---------- */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+section {
+  padding-block: clamp(1.75rem, 4vw, 3.25rem);
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.45em;
+}
+
+.hero {
+  min-height: 560px;
+}
+
+.hero h1 {
+  font-size: clamp(2.7rem, 5vw, 5.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero .lede {
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  margin-bottom: 1.1rem;
+}
+
+.actions {
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  padding: 0.7rem 1.15rem;
+}
+
+.page-head {
+  padding: clamp(1.75rem, 3.5vw, 3rem) 0 1.5rem;
+}
+
+.page-head h1 {
+  font-size: clamp(2.15rem, 4.5vw, 3.5rem);
+}
+
+.page-head .eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.band {
+  padding: 1.5rem 0 1.25rem;
+}
+
+.band h2,
+section[aria-labelledby="facts-h"] h2,
+section[aria-labelledby="path-h"] h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+.cols,
+.split,
+.explorer {
+  gap: 1.5rem;
+}
+
+.timeline {
+  margin-top: 1.5rem;
+}
+
+.timeline li {
+  padding-bottom: 1.5rem;
+}
+
+.facts {
+  margin-top: 1.4rem;
+}
+
+.facts > div {
+  min-height: 138px;
+  padding: 1rem;
+}
+
+.facts dd {
+  font-size: clamp(1.5rem, 2.4vw, 2.35rem);
+}
+
+.nasa-figure {
+  margin-top: 1.75rem;
+}
+
+.qlist,
+.crew-grid,
+.community-grid {
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.qlist > li,
+.crew-card {
+  padding: 1rem;
+}
+
+.qlist h3 {
+  font-size: 1.3rem;
+}
+
+.planner {
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.planner fieldset,
+.fuel-section {
+  margin-bottom: 1rem;
+}
+
+.readout {
+  gap: 0.7rem;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+}
+
+.site-footer .wrap {
+  gap: 0.75rem 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.next {
+  padding-block: 1.25rem;
+}
+
+@media (max-width: 56rem) {
+  .hero {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 42rem) {
+  .hero {
+    min-height: 400px;
+  }
+
+  .facts > div {
+    min-height: 0;
+  }
+
+  .site-nav.open {
+    display: block;
+  }
+}
+
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-block: 0.75rem;
+}
+
+.photo-row img {
+  display: block;
+  width: 100%;
+  height: clamp(5.5rem, 11vw, 9rem);
+  object-fit: cover;
+  background: #101820;
+}
+
+@media (max-width: 42rem) {
+  .photo-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.4rem;
+  }
+
+  .photo-row img {
+    height: 6rem;
+  }
+}

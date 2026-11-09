@@ -1,0 +1,517 @@
+﻿AURORA Website Copy Review
+Editable copy worksheet
+This document gathers the website wording as it currently appears, organized by page. Rewrite the passages in your own voice. Keep scientific facts, safety notes, fictional-project disclaimers, and source credits accurate. Leave web addresses and proper names unchanged unless you have verified replacements.
+Shared site text
+Brand: AURORA
+Rewrite:
+Button: MENU
+Rewrite:
+Navigation: Overview | Mission | Spacecraft | Crew | Research | Community | Reference
+Rewrite:
+Skip: Skip to main content
+Rewrite:
+Footer: AURORA is a fictional project about Mars exploration, not a real mission or spacecraft program.
+Rewrite:
+Overview
+Browser title: AURORA | A Fictional Crewed Mission to Mars
+Rewrite:
+Search description: AURORA is a fictional, educational concept for a crewed mission to Mars. Explore the mission, spacecraft, crew and the questions it hopes to answer.
+Rewrite:
+A fictional Mars mission
+Rewrite:
+Four people. One planet. Hundreds of days from home.
+Rewrite:
+What would it take to send a crew to Mars and bring them home? Follow AURORA from launch through the long trip and back.
+Rewrite:
+Follow the mission
+Rewrite:
+Explore the spacecraft
+Rewrite:
+Top-down view of the inner solar system. The dashed line is a simplified, energy-saving path from Earth to Mars. Mars has to be somewhere else when the spacecraft leaves than where it will be on arrival. Orbits are drawn as circles and sizes of planets are not to scale.
+Rewrite:
+Mars Space Exploration Requires Many Jobs
+Rewrite:
+Science, Engineering, Medicine, and Leadership all contribute to a successful space exploration and research mission
+Rewrite:
+Field notes
+Rewrite:
+Five things to know about the destination
+Rewrite:
+Figures from the European Space Agency’s Mars fact page. See the Reference page.
+Rewrite:
+One Mars day
+Rewrite:
+24 h 37 min Called a “sol.” Close to an Earth day.
+Rewrite:
+Surface gravity
+Rewrite:
+3.7 m/s² About 38% of what you feel on Earth.
+Rewrite:
+Atmosphere
+Rewrite:
+95% CO₂ Mostly carbon dioxide, so humans cannot breathe it.
+Rewrite:
+Width
+Rewrite:
+6,794 km Roughly half the width of Earth.
+Rewrite:
+One Mars year
+Rewrite:
+687 days A little under two Earth years.
+Rewrite:
+NASA/JPL-Caltech, PIA 17948 — Martian landscape with rock rows and Mount Sharp (stereo). NASA image record .
+Rewrite:
+Choose a path
+Rewrite:
+Where would you like to start?
+Rewrite:
+Mission
+Rewrite:
+Goals, a timeline from launch to return, and a planner where you set the length of the trip.
+Rewrite:
+Spacecraft
+Rewrite:
+An interactive diagram of the six systems that keep four people alive.
+Rewrite:
+Crew
+Rewrite:
+Meet the four fictional crew members and the jobs they would do.
+Rewrite:
+Research
+Rewrite:
+Questions about Mars and what we still need to learn.
+Rewrite:
+Community
+Rewrite:
+Sample school projects and ideas for sharing Mars exploration with a classroom.
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: Curiosity's view of rows of rocks and Mount Sharp on Mars
+Rewrite:
+Diagram title: Top-down map of the inner solar system with a simplified Earth-to-Mars path
+Rewrite:
+Diagram description: The Sun sits at the center. Around it are the orbits of Mercury, Venus, Earth and Mars. A dashed curve leaves Earth's orbit on the left, swings around the Sun, and meets Mars's orbit on the right, where Mars will be when the spacecraft arrives. A second, solid Mars shows where the planet is at launch.
+Rewrite:
+Mission
+Browser title: Mission | AURORA
+Rewrite:
+Search description: The goals, timeline and trip-length planner for AURORA-1, a fictional crewed mission to Mars.
+Rewrite:
+Mission dossier
+Rewrite:
+AURORA-1: the plan
+Rewrite:
+A fictional four-person expedition to Mars, built to show how a real mission would fit together.
+Rewrite:
+Goals and limits
+Rewrite:
+What AURORA-1 sets out to do
+Rewrite:
+Land four people on Mars, let them work there, and bring them home safely.
+Rewrite:
+Study Mars’s rocks and ice to learn whether the planet was ever habitable.
+Rewrite:
+Test how people, machines and teamwork cope with long distance.
+Rewrite:
+What this project does not cover
+Rewrite:
+This is not an engineering design. There is no budget, launch date or tested hardware. The route and schedule are examples, not plans for a real mission.
+Rewrite:
+Mission timeline
+Rewrite:
+From launch pad to home
+Rewrite:
+Stage 1 · Before launch
+Rewrite:
+Prepare and wait for the window
+Rewrite:
+Earth and Mars line up well for a trip only about once every 26 months, so missions must launch in a short window.
+Rewrite:
+Stage 2 · Outbound
+Rewrite:
+The long way out
+Rewrite:
+AURORA-1 can pick a faster or slower route. A NASA planning study described a fast trajectory of about 180 days.
+Rewrite:
+How crews stay healthy and motivated for months in microgravity is still being studied.
+Rewrite:
+Stage 3 · Arrival
+Rewrite:
+Enter orbit and descend
+Rewrite:
+A lander separates and carries the crew down. Mars’s thin atmosphere gives only some braking, which makes heavy landings hard.
+Rewrite:
+Stage 4 · Surface
+Rewrite:
+Work on Mars
+Rewrite:
+Crew collect samples, test equipment and check for water ice. Messages to and from Earth take many minutes, so the crew must decide many things themselves.
+Rewrite:
+Stage 5 · Return
+Rewrite:
+Wait, launch, and fly home
+Rewrite:
+The trip home also depends on where Earth and Mars are in their orbits, so crews may need to stay for a long time.
+Rewrite:
+Stage 6 · After landing
+Rewrite:
+Recovery and review
+Rewrite:
+Doctors check the crew, and engineers study what worked, so the next mission can be safer.
+Rewrite:
+NASA/JPL-Caltech, PIA 14832 — Artist’s concept of Curiosity approaching Mars. This depicts a robotic mission, not AURORA. NASA image record .
+Rewrite:
+Try it
+Rewrite:
+Trip-length planner
+Rewrite:
+Choose a route and a stay on Mars. The planner adds up how long the crew would be away from Earth.
+Rewrite:
+Route (each way)
+Rewrite:
+Faster route: about 180 days. Matches the fast trajectory in a NASA planning study. Needs more fuel.
+Rewrite:
+Slower route: about 260 days. A round number we chose to show the trade-off. Uses less fuel.
+Rewrite:
+Fuel consumption
+Rewrite:
+Relative fuel use for each route; exact amounts depend on spacecraft design and mission details.
+Rewrite:
+Faster route
+Rewrite:
+Slower route
+Rewrite:
+Time on Mars: 30 days
+Rewrite:
+180
+Rewrite:
+days outbound
+Rewrite:
+30
+Rewrite:
+days on Mars
+Rewrite:
+180
+Rewrite:
+days return
+Rewrite:
+390
+Rewrite:
+days total
+Rewrite:
+12.8
+Rewrite:
+months total
+Rewrite:
+A middle-length stay balances research time against time away from Earth.
+Rewrite:
+Limits: this model assumes the return takes as long as the outbound trip and ignores planet alignment, so it is a teaching tool, not a flight plan.
+Rewrite:
+← Overview
+Rewrite:
+Spacecraft →
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: Artist's concept of NASA's Curiosity spacecraft approaching Mars
+Rewrite:
+Spacecraft
+Browser title: Spacecraft | AURORA
+Rewrite:
+Search description: An interactive concept diagram of the AURORA spacecraft and its six main systems.
+Rewrite:
+Technology
+Rewrite:
+Connected Systems, Distinct Roles.
+Rewrite:
+A Mars mission crew depends on launch, entry and exit, life support, communication, navigation, and return capabilities. This page represents the roles those systems support in the AURORA concept.
+Rewrite:
+The descriptions are fictional. They do not represent actual spacecraft designs.
+Rewrite:
+NASA/JPL-Caltech, PIA 14832 — Artist’s concept of Curiosity approaching Mars. This depicts a robotic mission, not the AURORA spacecraft shown below. NASA image record .
+Rewrite:
+Spacecraft systems
+Rewrite:
+A rough sketch, not to scale or an engineering design.
+Rewrite:
+1 Descent lander
+Rewrite:
+2 Crew habitat
+Rewrite:
+3 Radiation shelter
+Rewrite:
+4 Supply module
+Rewrite:
+5 Propulsion stage
+Rewrite:
+6 Solar arrays
+Rewrite:
+1. Descent lander
+Rewrite:
+Carries the crew from orbit down to the surface.
+Rewrite:
+Mars’s atmosphere is thin, so it slows a spacecraft less than Earth’s does, yet it still heats the vehicle during entry. Landing something large and heavy is one of the hardest unsolved parts of a crewed mission.
+Rewrite:
+2. Crew habitat
+Rewrite:
+Where four people live, eat, exercise and work on the way to Mars.
+Rewrite:
+Long stays in weightlessness weaken muscles and bones, so daily exercise is a core part of the plan. This concept leaves out exact room sizes on purpose.
+Rewrite:
+3. Radiation shelter
+Rewrite:
+A small, shielded space where the crew can wait out solar storms.
+Rewrite:
+Radiation outside Earth’s protective magnetic field is a major health concern for long trips. How much shielding is enough is still being researched.
+Rewrite:
+4. Supply module
+Rewrite:
+Stores food, spare parts and recycling equipment for the whole trip.
+Rewrite:
+Everything launched from Earth is costly, so crews would recycle as much air and water as possible and carry spares for repairs they cannot order.
+Rewrite:
+5. Propulsion stage
+Rewrite:
+Pushes the spacecraft out of Earth orbit toward Mars.
+Rewrite:
+Space agencies have studied several engine types. AURORA does not choose one, because that decision needs real engineering analysis.
+Rewrite:
+6. Solar arrays
+Rewrite:
+Collect sunlight to make electricity for equipment, lights and life support.
+Rewrite:
+Mars is farther from the Sun than Earth is, so sunlight there is weaker. A real design would have to account for that, and for dust storms on the surface.
+Rewrite:
+← Mission
+Rewrite:
+Crew →
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: Artist's concept of NASA's Curiosity spacecraft approaching Mars
+Rewrite:
+Diagram title: AURORA spacecraft diagram
+Rewrite:
+Diagram description: A side view of a long spacecraft with six numbered parts: lander at the front, crew habitat, radiation shelter, supply module, propulsion stage, and solar arrays above and below. The same information is in the list next to this diagram.
+Rewrite:
+Crew
+Browser title: Crew | AURORA
+Rewrite:
+Search description: Meet the four fictional crew members of AURORA-1 and the roles a real Mars crew would need.
+Rewrite:
+Crew roster
+Rewrite:
+The four who would go
+Rewrite:
+Real expeditions succeed because of the people as much as the machines. These crew members are fictional, and each one stands for a skill a Mars mission would need.
+Rewrite:
+Meet the crew
+Rewrite:
+Person 1:
+Rewrite:
+Njeri Mwangi. Black Female Commander. Born in Nairobi, Kenya and immigrated to the United States to teach chemistry at Princeton University. Soon went to work on the Artemis Vl mission, then helped test multiple Mars environments and probes, to later get promoted to the Aurora space exploration program.
+Rewrite:
+Person 2:
+Rewrite:
+Hiroto Yamazaki. Japanese Male Doctor and Scientist. Born in Hiroshima Japan, he studied sports medicine at the University of Tokyo, where he also learnt English. Eventually the Aurora space exploration program recruited him.
+Rewrite:
+Person 3:
+Rewrite:
+Gonzales Lacasa. Mexican Pilot. He was Born in Mexico City, Mexico. When he turned 14, his parents immigrated to the United States for better job opportunities. He got very interested in his fathers passion about the stars and space, so he studied for years to later apply for the Massachusetts Institute of Technology and got accepted to later become a pilot for Aurora.
+Rewrite:
+Person 4:
+Rewrite:
+Logan Smith. Flight Engineer. Logan was born in Burlington, Vermont. He had great interest in mechanics, and generally how things work, from a very young age. When he entered the portal for a flight mechanics camp through his middle school, he discovered his strengths and was off to the races.
+Rewrite:
+NASA/JPL-Caltech, PIA 17948 — A view of the Mars landscape from the Curiosity mission. This is a real NASA rover image, not a portrait of AURORA’s fictional crew. NASA image record .
+Rewrite:
+Several Areas of Expertise is Required.
+Rewrite:
+A Mars team would need science, medicine, piloting, and engineering experience and practice to be a successful team under high pressure situations.
+Rewrite:
+These profiles are fictional and do not represent any astronauts or selected people
+Rewrite:
+← Spacecraft
+Rewrite:
+Research →
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: Curiosity's view of rows of rocks and Mount Sharp on Mars
+Rewrite:
+Research
+Browser title: Research | AURORA
+Rewrite:
+Search description: Six open questions about Mars that a crewed mission like AURORA would help answer.
+Rewrite:
+Research questions
+Rewrite:
+What we still want to know
+Rewrite:
+Mars still has plenty of unanswered questions. Here are a few worth investigating.
+Rewrite:
+NASA/JPL-Caltech, PIA 17948 — Martian landscape with rock rows and Mount Sharp (stereo). NASA image record .
+Rewrite:
+Want More Information?
+Rewrite:
+What equipment is needed for Mars exploration?
+Rewrite:
+What tools would be necessary for surface operations, and what measurements would they provide?
+Rewrite:
+What life-forms have been discovered on Mars?
+Rewrite:
+What effect do these life forms have on the actual planet and atmosphere around it?
+Rewrite:
+How should Martian sites be managed?
+Rewrite:
+What practices and procedures could countries do to create safer experiences?
+Rewrite:
+Data Should Be Available For Review
+Rewrite:
+Clear reporting makes it easy to access data about mission strategy, cost, limitations, and results. Public findings and international cooperation are also careful considerations.
+Rewrite:
+AURORA is a fictional educational concept. It is not an agency, active mission, or launch schedule.
+Rewrite:
+Research Beyond Earth Has Its Limits
+Rewrite:
+Work on science, life support, medicine, and materials may inform research on Earth. All though this does not translate into direct benefits.
+Rewrite:
+Space Exploration involves dangerous risks and heavy costs. Future goals on exploration should be decided on science goals, public opinion, crew safety, and cost.
+Rewrite:
+See our sources
+Rewrite:
+← Crew
+Rewrite:
+Reference →
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: Curiosity's view of rows of rocks and Mount Sharp on Mars
+Rewrite:
+Community
+Browser title: Community | AURORA
+Rewrite:
+Search description: Sample classroom projects and ideas for bringing Mars exploration to a school community.
+Rewrite:
+Classroom and community
+Rewrite:
+Mars ideas start close to home.
+Rewrite:
+A school project could invite students to imagine what people might need to explore Mars, then share their ideas through drawings, models and questions.
+Rewrite:
+A sample community gallery
+Rewrite:
+These are made-up example posts to show how a future school or community showcase could look. The artwork is illustrative, not submitted by real students.
+Rewrite:
+Sample post · Spacecraft sketch
+Rewrite:
+A ship with room for a garden
+Rewrite:
+A sample caption: “I added a plant room so the crew can grow some of their food on the trip.”
+Rewrite:
+Sample post · School activity
+Rewrite:
+Space ideas on the lunch table
+Rewrite:
+A sample community display could collect drawings and questions from a classroom event without showing student faces.
+Rewrite:
+Sample post · Rover idea
+Rewrite:
+Big wheels for a bumpy world
+Rewrite:
+A sample caption: “My rover has wide wheels so it can get over rocks and carry tools.”
+Rewrite:
+From the NASA archive
+Rewrite:
+NASA/JPL-Caltech/MSSS, PIA 20602 — Curiosity self-portrait at the Okoruso drill hole. This NASA archive image is separate from the fictional sample posts above. NASA image record .
+Rewrite:
+Things a class could try
+Rewrite:
+How a school project could work
+Rewrite:
+Start small
+Rewrite:
+Ask a teacher whether one class would like to try a short drawing or design activity. Share a simple prompt, give students time to create, and invite them to write a sentence about their idea.
+Rewrite:
+Make a classroom gallery
+Rewrite:
+Display the work at school first. If the school and families approve sharing it, choose a few pieces for a community post and explain what the students designed.
+Rewrite:
+Keep students safe: Get school and parent or guardian permission before sharing student work. Leave out children's full names, faces, schedules and identifying details. These sample posts are fictional; no school event or partnership is being claimed.
+Rewrite:
+Accessibility descriptions (keep descriptions factual and useful)
+Image description: NASA's Curiosity rover taking a self-portrait at the Okoruso drill hole on Mars
+Rewrite:
+Diagram title: Sample student-style spacecraft drawing
+Rewrite:
+Diagram description: A playful hand-drawn spacecraft with round windows, fins and stars.
+Rewrite:
+Diagram title: Illustration of a school community gathering
+Rewrite:
+Diagram description: A school building, trees and a table with colorful spacecraft drawings, with no people shown.
+Rewrite:
+Diagram title: Sample student-style Mars rover drawing
+Rewrite:
+Diagram description: A simple rover with large wheels, a camera mast and a red rocky landscape.
+Rewrite:
+Reference
+Browser title: Reference | AURORA
+Rewrite:
+Search description: Sources, image credits, copyright notes and project documents for the AURORA website.
+Rewrite:
+Sources and credits
+Rewrite:
+Reference
+Rewrite:
+Where our facts came from, what is original to this project, and the required TSA documents.
+Rewrite:
+Required documents
+Rewrite:
+Student Copyright Checklist (PDF)
+Rewrite:
+Work Log (PDF)
+Rewrite:
+Sources for facts
+Rewrite:
+Facts are written in our own words. No text was copied from these pages.
+Rewrite:
+esa.int/Our_Activities/Space_Science/Mars_Express/Facts_about_Mars
+Rewrite:
+Used for: length of a sol (24 h 37 min), surface gravity (3.711 m/s²), atmosphere (95.32% carbon dioxide), diameter (6,794 km) and orbital period (687 Earth days). The “about 38% of Earth’s gravity” figure is our own calculation: 3.711 divided by 9.81.
+Rewrite:
+nssdc.gsfc.nasa.gov/planetary/mars/marslaun.html
+Rewrite:
+Used for: launch windows about every 26 months, and the fast trajectory of about 180 days described in NASA mission planning.
+Rewrite:
+Statements without a listed source. General statements about radiation, weakened muscles and bones in weightlessness, thin Martian air during landing, weaker sunlight at Mars, planetary protection, and radio delay are widely known. The same goes for the relative orbit distances in the Overview drawing (about 0.4, 0.7, 1.0 and 1.5 times Earth’s distance from the Sun for Mercury, Venus, Earth and Mars) and the shape of the transfer path. They have not yet been tied to a specific source on this page. The team still needs to add a citation for each one.
+Rewrite:
+Images, fonts and media
+Rewrite:
+Item | Where used | Source and rights
+Rewrite:
+Solar system path illustration | Overview | Drawn in SVG code inside index.html . No outside image used.
+Rewrite:
+Spacecraft diagram | Spacecraft | Drawn in SVG code inside spacecraft.html . A concept drawing, not a real design.
+Rewrite:
+Crew icons | Crew | Simple SVG circles with initials. No photos of real people.
+Rewrite:
+Fonts | All pages | Fonts already installed on the viewer’s device. No font files are downloaded.
+Rewrite:
+Martian Landscape With Rock Rows and Mount Sharp (Stereo), PIA 17948 | Overview, Crew, Research | NASA/JPL-Caltech. NASA image record .
+Rewrite:
+Curiosity Approaching Mars, Artist’s Concept, PIA 14832 | Mission, Spacecraft | NASA/JPL-Caltech. NASA image record .
+Rewrite:
+Curiosity Self-Portrait at Okoruso Drill Hole, PIA 20602 | Community | NASA/JPL-Caltech/MSSS. NASA image record .
+Rewrite:
+Audio and video | None | None used.
+Rewrite:
+Archive images load directly from NASA’s image servers and require an internet connection. Captions identify the image credit and link to each NASA record.
+Rewrite:
+How the site is built
+Rewrite:
+The site uses plain HTML, CSS and JavaScript. It uses no framework, no template and no theme, and it loads no outside libraries. NASA archive images load directly from NASA’s image servers; all other files are local. It collects no personal information.
+Rewrite:
+AURORA is a fictional concept for education. It is not endorsed by NASA, ESA or any other agency.
+Rewrite:
+Team to complete before submission: confirm who wrote and made each part of the site, and add any outside help or tools the team used, as your advisor and the TSA rules require. Then delete this box. This statement was not written by the team and must not be left as is.
+Rewrite:
+← Research
+Rewrite:
+Back to Overview →
+Rewrite:
